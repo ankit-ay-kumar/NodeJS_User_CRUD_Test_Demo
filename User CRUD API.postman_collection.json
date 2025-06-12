@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "be36c006-c4d4-4075-81ba-bdc816bea626",
+		"name": "User CRUD API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45563955",
+		"_collection_link": "https://rsalve-3071069.postman.co/workspace/rsalve's-Workspace~98a55b6c-a30b-4e16-8e7f-c6c41738ceb1/collection/45563955-be36c006-c4d4-4075-81ba-bdc816bea626?action=share&source=collection_link&creator=45563955"
+	},
+	"item": [
+		{
+			"name": "Get User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/users/6847c92aa6eb7f8e396bc446",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"6847c92aa6eb7f8e396bc446"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"name\": \"Rahul\",\r\n        \"email\": \"rahul@cg.com\",\r\n        \"age\": 32,\r\n        \"department\": \"R&D\"\r\n    },\r\n     {\r\n        \"name\": \"Gagan\",\r\n        \"email\": \"gagan@cg.com\",\r\n        \"age\": 40,\r\n        \"department\": \"Operation\"\r\n    },\r\n     {\r\n        \"name\": \"Dinesh\",\r\n        \"email\": \"dinesh@cg.com\",\r\n        \"age\": 38,\r\n        \"department\": \"HR\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Daniel\",\r\n    \"email\": \"daniel@cg.com\",\r\n    \"age\": 44,\r\n    \"department\": \"R&D\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/6847c92aa6eb7f8e396bc446",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"6847c92aa6eb7f8e396bc446"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"rohitsharma@cg.com\",\r\n    \"age\": 40,\r\n    \"unit\": \"HR\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/6847c92aa6eb7f8e396bc446",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"6847c92aa6eb7f8e396bc446"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
